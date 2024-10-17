@@ -1,0 +1,60 @@
+---
+import { Screen, Grid, Header, Footer, Heading, Column, Paragraph, Link } from '@amsterdam/design-system-react'
+
+import '@amsterdam/design-system-assets/font/index.css'
+import '@amsterdam/design-system-css/dist/index.css'
+import '@amsterdam/design-system-tokens/dist/index.css'
+
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./favicon/favicon.ico" sizes="16x16 32x32 48x48 64x64" />
+    <link rel="icon" href="./favicon/icon.svg" type="image/svg+xml" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Screen maxWidth="wide">
+      <Grid>
+        <Grid.Cell span="all">
+          <Header logoLink="https://www.amsterdam.nl/" />
+        </Grid.Cell>
+      </Grid>
+      <main>
+        <Grid paddingTop="medium" paddingBottom="large">
+          <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
+            <slot />
+          </Grid.Cell>
+        </Grid>
+      </main>
+      <Footer>
+        <Footer.Top>
+          <Heading inverseColor className="ams-visually-hidden">Colofon</Heading>
+          <Grid gapVertical="large" paddingVertical="medium">
+            <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
+              <Column as="section" gap="extra-small">
+                <Heading level={2} size="level-4" inverseColor>Contact</Heading>
+                <Paragraph size="small" inverseColor>
+                  Lukt het niet om te vinden wat u zoekt? Bel het telefoonnummer{' '}
+                  <Link href="tel:+3114020" onBackground="dark" variant="inline"> 14 020 </Link>
+                  .
+                </Paragraph>
+                <Paragraph size="small" inverseColor>
+                  Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur.
+                </Paragraph>
+              </Column>
+            </Grid.Cell>
+          </Grid>
+        </Footer.Top>
+      </Footer>
+    </Screen>
+  </body>
+</html>
