@@ -11,7 +11,7 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@amsterdam/design-system-assets": "0.2.1",
+    "@amsterdam/design-system-assets": "0.3.0",
     "@amsterdam/design-system-css": "0.11.1",
     "@amsterdam/design-system-react": "0.11.1",
     "@amsterdam/design-system-react-icons": "0.1.13",
