@@ -41,24 +41,23 @@ const { title } = Astro.props
         </Grid>
       </main>
       <Footer>
-        <Footer.Top>
-          <Heading inverseColor className="ams-visually-hidden">Colofon</Heading>
+        <Footer.Spotlight>
           <Grid gapVertical="large" paddingVertical="medium">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
-              <Column as="section" gap="extra-small">
-                <Heading level={2} size="level-4" inverseColor>Contact</Heading>
-                <Paragraph size="small" inverseColor>
+              <Column as="section" gap="x-small">
+                <Heading level={2} size="level-4" color="inverse">Contact</Heading>
+                <Paragraph size="small" color="inverse">
                   Lukt het niet om te vinden wat u zoekt? Bel het telefoonnummer{' '}
-                  <Link href="tel:+3114020" inverseColor variant="inline"> 14 020 </Link>
+                  <Link href="tel:+3114020" color="inverse" variant="inline"> 14 020 </Link>
                   .
                 </Paragraph>
-                <Paragraph size="small" inverseColor>
+                <Paragraph size="small" color="inverse">
                   Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur.
                 </Paragraph>
               </Column>
             </Grid.Cell>
           </Grid>
-        </Footer.Top>
+        </Footer.Spotlight>
       </Footer>
     </Screen>
   </body>
