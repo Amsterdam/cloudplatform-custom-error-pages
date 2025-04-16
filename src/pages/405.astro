@@ -1,0 +1,17 @@
+---
+/**
+ * @license EUPL-1.2+
+ * Copyright Gemeente Amsterdam
+ */
+
+import Layout from '../Layout.astro'
+import { Heading, Paragraph } from '@amsterdam/design-system-react'
+---
+
+<Layout title="Verzoek geweigerd">
+  <Heading level={1} className="ams-mb-l">Verzoek geweigerd</Heading>
+  <Paragraph className="ams-mb-m" size="large">
+    Helaas. De gebruikte methode om toegang te verkrijgen is niet toegestaan.
+  </Paragraph>
+  <Paragraph size="small">Foutcode: 405</Paragraph>
+</Layout>

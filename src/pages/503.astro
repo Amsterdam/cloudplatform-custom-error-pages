@@ -1,0 +1,39 @@
+---
+/**
+ * @license EUPL-1.2+
+ * Copyright Gemeente Amsterdam
+ */
+
+import Layout from '../Layout.astro'
+import { Heading, Link, Paragraph } from '@amsterdam/design-system-react'
+---
+
+<Layout title="Er is iets mis gegaan">
+  <Heading level={1} className="ams-mb-l">Er is iets mis gegaan</Heading>
+  <Paragraph className="ams-mb-m" size="large">De pagina die u probeert te bezoeken heeft een storing.</Paragraph>
+  <Paragraph className="ams-mb--md">
+    Krijgt u deze melding vaker te zien? Probeer het dan op een later tijdstip nogmaals. Onze excuses voor het ongemak.
+  </Paragraph>
+
+  <Heading level={2} size="level-3" className="ams-mb-m">Contact over dit probleem</Heading>
+  <Paragraph className="ams-mb-m">
+    Blijft het probleem zich voordoen? Neem dan bij voorkeur contact op via ons
+    <Link
+      href="https://formulieren.amsterdam.nl/TriplEforms/DirectRegelen/formulier/nl-NL/evAmsterdam/Contactformulier.aspx/Contactformulier"
+      target="_blank"
+      variant="inline"
+    >
+      contactformulier
+    </Link>.
+  </Paragraph>
+  <Paragraph className="ams-mb--md">
+    Lukt het niet contact op te nemen via ons contactformulier, bel dan 14 020.
+  </Paragraph>
+
+  <Heading level={2} size="level-3" className="ams-mb-m">Detailinformatie over dit probleem</Heading>
+  <Paragraph className="ams-mb-m">
+    Onderstaande informatie hebben we nodig om dit probleem te kunnen verhelpen. Stuur deze informatie mee als u dit
+    probleem bij ons meldt. Dan kunnen wij dit probleem sneller oplossen.
+  </Paragraph>
+  <Paragraph size="small">Foutcode: 503</Paragraph>
+</Layout>
