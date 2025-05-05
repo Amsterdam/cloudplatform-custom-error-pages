@@ -20,7 +20,7 @@
     "@astrojs/react": "4.2.4",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.0",
-    "astro": "5.7.4",
+    "astro": "5.7.10",
     "astro-relative-links": "0.4.2",
     "prettier": "3.5.3",
     "prettier-plugin-astro": "0.14.1",
