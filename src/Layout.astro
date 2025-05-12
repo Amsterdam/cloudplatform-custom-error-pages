@@ -4,7 +4,7 @@
  * Copyright Gemeente Amsterdam
  */
 
-import { Screen, Grid, Header, Footer, Heading, Column, Paragraph, Link } from '@amsterdam/design-system-react'
+import { Grid, Page, PageHeader, PageFooter, Heading, Column, Paragraph, Link } from '@amsterdam/design-system-react'
 
 import '@amsterdam/design-system-assets/font/index.css'
 import '@amsterdam/design-system-css/dist/index.css'
@@ -27,24 +27,24 @@ const { title } = Astro.props
     <title>{title}</title>
   </head>
   <body>
-    <Screen maxWidth="wide">
-      <Header logoLink="https://www.amsterdam.nl/" />
+    <Page>
+      <PageHeader logoLink="https://www.amsterdam.nl/" />
       <main>
-        <Grid paddingTop="medium" paddingBottom="large">
+        <Grid paddingTop="x-large" paddingBottom="large">
           <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
             <slot />
           </Grid.Cell>
         </Grid>
       </main>
-      <Footer>
-        <Footer.Spotlight>
-          <Grid gapVertical="large" paddingVertical="medium">
+      <PageFooter>
+        <PageFooter.Spotlight>
+          <Grid gapVertical="large" paddingVertical="x-large">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
               <Column as="section" gap="x-small">
                 <Heading level={2} size="level-4" color="inverse">Contact</Heading>
                 <Paragraph size="small" color="inverse">
                   Lukt het niet om te vinden wat u zoekt? Bel het telefoonnummer{' '}
-                  <Link href="tel:+3114020" color="inverse" variant="inline"> 14 020 </Link>
+                  <Link href="tel:+3114020" color="inverse"> 14 020 </Link>
                   .
                 </Paragraph>
                 <Paragraph size="small" color="inverse">
@@ -53,8 +53,8 @@ const { title } = Astro.props
               </Column>
             </Grid.Cell>
           </Grid>
-        </Footer.Spotlight>
-      </Footer>
-    </Screen>
+        </PageFooter.Spotlight>
+      </PageFooter>
+    </Page>
   </body>
 </html>
