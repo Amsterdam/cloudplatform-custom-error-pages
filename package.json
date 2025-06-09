@@ -15,7 +15,7 @@
     "@amsterdam/design-system-css": "0.16.0",
     "@amsterdam/design-system-react": "0.16.0",
     "@amsterdam/design-system-react-icons": "0.1.14",
-    "@amsterdam/design-system-tokens": "0.16.0",
+    "@amsterdam/design-system-tokens": "1.0.1",
     "@astrojs/check": "0.9.4",
     "@astrojs/react": "4.2.7",
     "@types/react": "19.1.3",
