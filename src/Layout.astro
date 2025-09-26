@@ -30,7 +30,7 @@ const { title } = Astro.props
     <Page>
       <PageHeader logoLink="https://www.amsterdam.nl/" />
       <main>
-        <Grid paddingTop="x-large" paddingBottom="large">
+        <Grid paddingTop="x-large" paddingBottom="2x-large">
           <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
             <slot />
           </Grid.Cell>
@@ -40,14 +40,13 @@ const { title } = Astro.props
         <PageFooter.Spotlight>
           <Grid gapVertical="large" paddingVertical="x-large">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
-              <Column as="section" gap="x-small">
-                <Heading level={2} size="level-4" color="inverse">Contact</Heading>
-                <Paragraph size="small" color="inverse">
+              <Column as="section" gap="small">
+                <Heading level={2} size="level-3" color="inverse">Contact</Heading>
+                <Paragraph color="inverse">
                   Lukt het niet om te vinden wat u zoekt? Bel het telefoonnummer{' '}
-                  <Link href="tel:+3114020" color="inverse"> 14 020 </Link>
-                  .
+                  <Link href="tel:+3114020" color="inverse">14 020</Link>.
                 </Paragraph>
-                <Paragraph size="small" color="inverse">
+                <Paragraph color="inverse">
                   Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur.
                 </Paragraph>
               </Column>
