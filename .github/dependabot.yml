@@ -5,5 +5,13 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+    cooldown:
+      default-days: 1 # Wait for one day after release before updating a dependency
+    groups:
+      patch-and-minor-dependencies:
+        applies-to: 'version-updates'
+        update-types:
+          - 'patch'
+          - 'minor'
     versioning-strategy: 'increase-if-necessary'
     open-pull-requests-limit: 20
