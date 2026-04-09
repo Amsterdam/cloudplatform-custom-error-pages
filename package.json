@@ -12,11 +12,11 @@
     "update": "npm-check-updates --target minor --upgrade --cooldown 1 && npm install"
   },
   "devDependencies": {
-    "@amsterdam/design-system-assets": "2.1.0",
-    "@amsterdam/design-system-css": "3.2.1",
-    "@amsterdam/design-system-react": "3.2.1",
+    "@amsterdam/design-system-assets": "2.2.0",
+    "@amsterdam/design-system-css": "3.3.0",
+    "@amsterdam/design-system-react": "3.3.0",
     "@amsterdam/design-system-react-icons": "2.0.0",
-    "@amsterdam/design-system-tokens": "3.3.0",
+    "@amsterdam/design-system-tokens": "3.4.0",
     "@astrojs/check": "0.9.8",
     "@astrojs/react": "4.4.2",
     "@types/react": "19.2.14",
