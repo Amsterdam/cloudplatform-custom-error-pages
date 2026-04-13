@@ -28,6 +28,6 @@
     "prettier-plugin-astro": "0.14.1",
     "react": "19.2.5",
     "react-dom": "19.2.5",
-    "typescript": "5.9.3"
+    "typescript": "6.0.2"
   }
 }
