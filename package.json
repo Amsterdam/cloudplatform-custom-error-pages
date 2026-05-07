@@ -21,7 +21,7 @@
     "@astrojs/react": "5.0.4",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "astro": "6.1.10",
+    "astro": "6.2.2",
     "astro-relative-links": "0.4.2",
     "npm-check-updates": "21.0.2",
     "prettier": "3.8.3",
