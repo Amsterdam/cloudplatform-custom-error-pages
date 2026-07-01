@@ -1,4 +1,4 @@
-name: CI
+name: Check types
 
 on:
   push:
@@ -8,10 +8,15 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: check-types-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
-  test:
-    name: Check
+  check-types:
+    name: Check types
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Check out branch
@@ -33,5 +38,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run Check
+      - name: Run Astro check
         run: npm run check
