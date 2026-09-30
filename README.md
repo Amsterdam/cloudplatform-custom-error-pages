@@ -14,6 +14,8 @@ You need to have the following tools installed to run this project locally:
 - [Git](https://git-scm.com/)
 - [Node.js and npm](https://nodejs.org/en/)
 
+This project uses npm. Please don’t use pnpm or Yarn, so that `package-lock.json` stays the only lockfile.
+
 ### Run local server
 
 `npm run dev`
