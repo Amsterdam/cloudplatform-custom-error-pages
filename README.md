@@ -44,7 +44,7 @@ The follow error pages are generated. The links here are the location of these p
 ## Stack
 
 This repo uses [Astro](https://astro.build/) to generate the pages.
-Astro allows to generate completely static, JavaScript-free pages, which makes sense for error pages.
+Astro allows you to generate completely static, JavaScript-free pages, which makes sense for error pages.
 The pages themselves are created using [Amsterdam Design System](https://designsystem.amsterdam/) React components.
 
 ## Formatting caveats
