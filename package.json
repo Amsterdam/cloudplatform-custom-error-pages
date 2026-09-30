@@ -2,6 +2,10 @@
   "name": "cloudplatform-custom-error-pages",
   "type": "module",
   "version": "0.0.1",
+  "allowScripts": {
+    "esbuild": false,
+    "fsevents": false
+  },
   "scripts": {
     "astro": "astro",
     "build": "astro check && astro build",
