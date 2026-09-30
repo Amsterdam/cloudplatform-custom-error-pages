@@ -44,8 +44,23 @@ The follow error pages are generated. The links here are the location of these p
 ## Stack
 
 This repo uses [Astro](https://astro.build/) to generate the pages.
-Astro allows you to generate completely static, JavaScript-free pages, which makes sense for static error pages.
+Astro allows to generate completely static, JavaScript-free pages, which makes sense for error pages.
 The pages themselves are created using [Amsterdam Design System](https://designsystem.amsterdam/) React components.
+
+## Formatting caveats
+
+`prettier-plugin-astro` reformats inline component children onto separate lines.
+In HTML, the resulting newlines and indentation become visible whitespace — for example, "contactformulier ." instead of "contactformulier."
+
+To prevent this, wrap inline text content in JSX expressions:
+
+```astro
+<!-- Bad: prettier will put "text" and "." on separate lines, adding visible whitespace -->
+<Link href="…">text</Link>.
+
+<!-- Good: JSX expressions don't produce whitespace text nodes -->
+<Link href="…">{'text'}</Link>{'.'}
+```
 
 ## Code of conduct
 
