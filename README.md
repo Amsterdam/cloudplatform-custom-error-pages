@@ -47,6 +47,14 @@ This repo uses [Astro](https://astro.build/) to generate the pages.
 Astro allows you to generate completely static, JavaScript-free pages, which makes sense for static error pages.
 The pages themselves are created using [Amsterdam Design System](https://designsystem.amsterdam/) React components.
 
+## Why `prettier-plugin-astro` is pinned to 0.x
+
+Version 1.x of `prettier-plugin-astro` reformats inline component children onto separate lines.
+Astro renders those newlines and indentation as visible whitespace in the HTML output — for example, "contactformulier ." instead of "contactformulier." or "14 020 ." instead of "14 020."
+
+The only workaround is wrapping text in JSX expressions (`{'text'}`), and `prettier-ignore` does not work with this plugin.
+That trade-off isn't worth it for a formatting-only upgrade, so we stay on 0.x until the plugin handles inline content correctly.
+
 ## Code of conduct
 
 We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
